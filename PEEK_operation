@@ -1,0 +1,11 @@
+void peek(struct node **top)
+{
+    // IF no stack in the sense;
+    if(*top == NULL)
+    {
+        printf("sorry!,no stack !");
+        return;
+    }
+    // accessing top element of the stack;
+    printf("%d",(*top)->data);
+}
