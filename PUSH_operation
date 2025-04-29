@@ -1,0 +1,8 @@
+void push(struct node **top,int deta)
+{
+    // new node creation;
+    struct node *new = malloc(sizeof(struct node));
+    new->data = deta;
+    new->next = *top;// connecting to previous node;
+    *top = new;// making current node as top;
+}
