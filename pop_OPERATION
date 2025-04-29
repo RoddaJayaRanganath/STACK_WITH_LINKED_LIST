@@ -1,0 +1,21 @@
+// note :- we are not returning the poped item;
+void pop(struct node **top)
+{
+    // if no stack;
+    if(*top==NULL)
+    {
+        printf("sorry!, no stack here");
+        return;
+    }
+    // if we have one node in stack;
+    if((*top)->next==NULL)
+    {
+        printf("sorry!,no stack here");
+        free(*top);
+        *top = NULL;
+        return;
+    }
+    struct node *temp = *top;
+    *top = (*top)->next; 
+    free(temp);
+}
