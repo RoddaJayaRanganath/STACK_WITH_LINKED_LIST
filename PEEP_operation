@@ -1,0 +1,11 @@
+void peep(struct node **top)
+{
+    // peep like accessing elements of stack;
+    // with out poping them;
+    struct node *temp = *top;
+    while(temp)
+    {
+        printf("%d->",temp->data);
+        temp = temp->next;
+    }
+}
