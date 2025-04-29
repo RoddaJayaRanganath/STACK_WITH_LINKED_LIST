@@ -1,0 +1,23 @@
+// BASIC NEED FOR STACK IMPLEMENTAION;
+// WITH LINKED LIST;
+// 1. struct (NODE),self referential structure (NEXT);
+// 2. TOP;
+struct node
+{
+    int data;
+    struct node *next;
+};
+int main()
+{
+    // main function;
+    struct node *obj = NULL;
+    push(&obj,10);
+    push(&obj,20);
+    push(&obj,30);
+    push(&obj,40);
+    pop(&obj);
+    pop(&obj);
+    peep(&obj);
+    peek(&obj);
+    return 0;
+}
