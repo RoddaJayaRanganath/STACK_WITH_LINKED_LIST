@@ -9,7 +9,8 @@ struct node
 };
 int main()
 {
-    // main function;
+    // main functions;
+    // with push,pop,peek,and peep;
     struct node *obj = NULL;
     push(&obj,10);
     push(&obj,20);
